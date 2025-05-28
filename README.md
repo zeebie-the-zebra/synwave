@@ -1,35 +1,64 @@
+# Leona's Tinnitus Sound Generator (SynWave.py)
 
-# 🎧 synwave a tinnitus tone generator
+Welcome to Leona's Tinnitus Sound Generator! This application allows you to generate various types of sound waves, including tones, noises, and binaural beats. It's designed with a simple graphical user interface for easy control over sound parameters. Maybe it'll help with that ringing, or maybe you just like making interesting noises. Either way, have fun!
 
-A simple Python application that generates and plays sine wave tones for tinnitus relief or sound testing. The program includes a graphical user interface (GUI) for adjusting frequency and enabling a 180° phase shift.
+---
 
-## Features
+## Disclaimer
 
-- 🎚️ **Adjustable Frequency:** Use a slider to select a tone frequency between **100 Hz and 12,000 Hz**.
-- 🔁 **Continuous Playback:** Generates a 1-second audio tone that loops continuously.
-- 🔄 **Phase Shift Toggle:** Optionally apply a **180° phase shift** to the waveform.
-- 🧠 **Tinnitus Therapy Aid:** Useful for sound-based tinnitus management or hearing tests.
-- 🖥️ **Simple GUI:** Built with Tkinter for ease of use.
-
-## Requirements
-
-- Python 3.x
-- Modules:
-  - `tkinter` (comes with Python)
-  - `pygame`
-
-Install `pygame` if not already available:
-
-```bash
-pip install pygame
-```
-
-⚠️ Disclaimer
-
-This application is intended for informational and personal use only and is not a medically tested or certified treatment for tinnitus or any other condition.
+**This application is intended for informational and personal use only and is not a medically tested or certified treatment for tinnitus or any other condition.**
 
 The tone generator has not been evaluated by medical professionals, and no claims are made regarding its effectiveness for therapeutic purposes.
 
-Use at your own risk. The author of this script assumes no responsibility or liability for any damage, discomfort, hearing issues, or adverse effects caused directly or indirectly by the use of this software.
+**Use at your own risk.** The author of this script assumes no responsibility or liability for any damage, discomfort, hearing issues, or adverse effects caused directly or indirectly by the use of this software.
 
 If you suffer from tinnitus or any hearing condition, please consult a qualified healthcare provider before using this tool.
+
+---
+
+## Features
+
+*   **Multiple Waveforms**: Generate Sine, Square, Sawtooth, and Triangle waves.
+*   **Noise Generation**: Produce White, Pink, and Brown (Brownian/Red) noise.
+*   **Binaural Beats**: Create binaural beats by specifying a carrier frequency and a beat frequency.
+*   **Adjustable Frequencies**:
+    *   Carrier Frequency: 20 Hz to 15000 Hz for tones.
+    *   Beat Frequency: 0.1 Hz to 30.0 Hz for binaural beats.
+*   **Volume Control**: Adjust the output volume from 0% to 100%.
+*   **Phase Shift**: Toggle a 180-degree phase shift for tonal waveforms (Sine, Square, Sawtooth, Triangle).
+*   **Playback Timer**: Set a timer (in minutes) to automatically stop playback.
+*   **Preset System**:
+    *   Save your current sound settings (waveform, frequencies, volume, phase, timer) to a JSON file.
+    *   Load previously saved presets.
+*   **Graphical User Interface (GUI)**: Easy-to-use interface built with Tkinter.
+*   **Real-time Updates**: Most settings changes are applied immediately or on the next sound buffer.
+*   **Status Display**: A handy status bar shows what's currently playing, volume levels, selected frequencies, and any timer information or error messages.
+
+---
+
+## Requirements
+
+*   **Python 3.x**: The script is written for Python 3. (Tested with Python 3.7+).
+*   **Pygame**: Used for audio generation and playback.
+    *   You can install it via pip: `pip install pygame`
+*   **Tkinter**: Used for the GUI. This is usually included with standard Python installations. If not, you may need to install it separately (e.g., `sudo apt-get install python3-tk` on Debian/Ubuntu).
+
+---
+
+## How to Use
+
+### 1. Installation
+
+1.  Make sure you have Python 3 installed on your system.
+2.  Install the Pygame library if you haven't already: (In your Linux terminal / Windows cmd)
+    ```bash
+    pip install pygame
+    ```
+3.  Download or clone the `SynWave.py` script to your computer.
+
+### 2. Running the Script
+
+Open a terminal or command prompt, navigate to the directory where you saved `SynWave.py`, and run:
+
+```bash
+python SynWave.py
