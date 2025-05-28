@@ -62,3 +62,7 @@ Open a terminal or command prompt, navigate to the directory where you saved `Sy
 
 ```bash
 python SynWave.py
+
+```
+
+![Alt text](https://github.com/zeebie-the-zebra/synwave/blob/main/Screenshot_20250529_053226.png)
