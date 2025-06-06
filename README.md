@@ -66,3 +66,39 @@ python SynWave.py
 ```
 
 ![Alt text](https://github.com/zeebie-the-zebra/synwave/blob/main/Screenshot_20250529_053226.png)
+
+
+# Leona's Tinnitus Sound Generator (Synwave-SoundDevice-V1.py)
+This version has replaced pygame with numpty and sounddevice libaries due to a bug I couldnt quash in pygame (generated tones between 9000~12000hz werent working correctly)
+
+## Features
+*   **Sweep**: You can now set a frequency range and sweep through it over X amount of seconds. 
+
+## Requirements
+
+*   **Python 3.x**: The script is written for Python 3. (Tested with Python 3.7+).
+*   **Numpy & Sound Device**: Used for audio generation and playback.
+    *   You can install it via pip: `pip install sounddevice numpy`
+*   **Tkinter**: Used for the GUI. This is usually included with standard Python installations. If not, you may need to install it separately (e.g., `sudo apt-get install python3-tk` on Debian/Ubuntu).
+
+## How to Use
+
+### 1. Installation
+
+1.  Make sure you have Python 3 installed on your system.
+2.  Install the Sounddevice/Numpy library if you haven't already: (In your Linux terminal / Windows cmd)
+    ```bash
+    pip install sounddevice numpy
+    ```
+3.  Download or clone the `Synwave-SoundDevice-V1.py` script to your computer.
+
+### 2. Running the Script
+
+Open a terminal or command prompt, navigate to the directory where you saved `Synwave-SoundDevice-V1.py`, and run:
+
+```bash
+python Synwave-SoundDevice-V1.py
+
+```
+![Alt text](https://github.com/zeebie-the-zebra/synwave/blob/main/Screenshot_20250607_014047.png)
+---
